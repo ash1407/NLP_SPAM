@@ -17,6 +17,17 @@ app = Flask(__name__)
 def home():
 	return render_template('home.html')
 
+
+@app.before_first_request
+def setup_signal_handler():
+    def signal_handler(signum, frame):
+        # Your signal handling code here
+        pass
+
+    signal.signal(signal.SIGINT, signal_handler)
+    signal.signal(signal.SIGTERM, signal_handler)
+
+
 @app.route('/predict',methods=['POST'])
 def predict():
 #	df= pd.read_csv("spam.csv", encoding="latin-1")
