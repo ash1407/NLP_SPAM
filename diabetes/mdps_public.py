@@ -16,9 +16,9 @@ print(os.getcwd())
 
 diabetes_model = pickle.load(open('/app/nlp_spam/diabetes/diabetes_model.sav', 'rb'))
 
-heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
+heart_disease_model = pickle.load(open('/app/nlp_spam/diabetes/heart_disease_model.sav', 'rb'))
 
-parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
+parkinsons_model = pickle.load(open('/app/nlp_spam/diabetes/parkinsons_model.sav', 'rb'))
 
 
 
