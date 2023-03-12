@@ -14,7 +14,7 @@ import os
 # loading the saved models
 print(os.getcwd())
 
-diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
+diabetes_model = pickle.load(open('/app/nlp_spam/diabetes/diabetes_model.sav', 'rb'))
 
 heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
 
